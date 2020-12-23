@@ -258,6 +258,16 @@
 html {
   font-family: "Helvetica", sans-serif;
   font-size: 12px;
+  background: var(--gray-800);
+  color: var(--gray-300);
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 2rem;
 }
 
 table {
@@ -277,18 +287,27 @@ th {
   font-size: 1.5rem;
 }
 
-td.blank {
+th.blank {
+  border: none;
+  color: var(--gray-400);
+  font-weight: normal;
+}
+
+th.header {
+  border-color: var(--gray-400);
+  font-size: 2rem;
+  font-weight: normal;
+  color: var(--gray-400);
   border: none;
 }
 
-td.header {
-  border-color: var(--coolGray-800);
-  font-size: 2rem;
-  font-weight: bold;
+th.highlighted {
+  background-color: var(--gray-900);
+  color: var(--lightBlue-500);
 }
 
 td.input {
-  border-color: var(--coolGray-300)
+  border-color: var(--gray-700)
 }
 
 input.input {
@@ -301,11 +320,14 @@ input.input {
   margin: 0;
   padding: 0;
   border: 0;
+  color: var(--gray-300);
+  background-color: transparent;
 }
 
 input.input:focus {
   outline: none;
-  background: var(--lightBlue-50)
+  background: var(--gray-900);
+  color: var(--gray-200);
 }
 
 input.input.correct {
