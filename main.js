@@ -1,10 +1,8 @@
 /*
 
   TODO
-  * Pressing Enter should advance to the next field (same as pressing Tab)
   * Detect when all fields have been filled in correctly
-  * 
-
+  * Embed config in URL
 
 // */
 const DEFAULT_START = 1;
